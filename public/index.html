@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Student Information Management</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="#register">Register Student</a>
+    </nav>
+
+    <main>
+      <h1>Student Information Management</h1>
+
+      <section id="form-section">
+        <h2>Register Student</h2>
+        <form id="student-form">
+          <label>Student ID<input name="student_id" required></label>
+          <label>Full Name<input name="full_name" required></label>
+          <label>Course<input name="course" required></label>
+          <label>Year Level<input name="year_level" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <input type="hidden" name="id" />
+          <button type="submit">Save</button>
+          <button type="button" id="reset-btn">Reset</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Students</h2>
+        <table id="students-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Student ID</th>
+              <th>Full Name</th>
+              <th>Course</th>
+              <th>Year</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
